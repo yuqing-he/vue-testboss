@@ -18,4 +18,11 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
+.add-btn {
+  height: 40px;
+  margin: 14px;
+  padding: 0 10px;
+  line-height: 40px;
+  border: none;
+}
 </style>

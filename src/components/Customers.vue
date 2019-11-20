@@ -3,7 +3,6 @@
     <Alert v-if="alert" v-bind:message="alert"></Alert>
     <h1 class="page-header">用户管理系统</h1>
     <input type="text" class="form-control" placeholder="搜索" v-model="filterInput">
-
     <table class="table table-striped">
       <thead>
         <tr>
@@ -66,4 +65,26 @@ export default {
 </script>
 
 <style scoped>
+.search {
+  padding: 10px 0;
+}
+.bar6 input {
+  border: 2px solid #222;
+  border-radius: 5px;
+  background: transparent;
+  top: 0;
+  right: 0;
+}
+.bar6 button {
+  background: #222;
+  border-radius: 0 5px 5px 0;
+  width: 60px;
+  top: 0;
+  right: 0;
+}
+.bar6 button:before {
+  content: "搜索";
+  font-size: 13px;
+  color: #f9f0da;
+}
 </style>

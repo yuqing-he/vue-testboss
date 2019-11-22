@@ -1,6 +1,6 @@
-# vue_app
+# 用户后台管理系统1.0
 
-> A Vue.js project
+> 一个练手项目
 
 ## Build Setup
 

@@ -16,7 +16,7 @@ npm run dev
 npm run build
 
 # run start virtual data at localhost:3000 (启动虚拟数据)
-npm run json:server (注：json:server是package.json文件的)
+npm run json:server (注：json:server是package.json文件的)注：GitHub还没上传虚拟数据文件
 
 ```
 

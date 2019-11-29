@@ -7,7 +7,6 @@ import About from './components/About'
 import Add from './components/Add'
 import CustomersDetails from './components/CustomersDetails'
 import Edit from './components/Edit'
-import Cart from './components/cart'
 
 Vue.config.productionTip = false
 
@@ -23,8 +22,7 @@ const router = new VueRouter({
     { path: '/about', component: About },
     { path: '/add', component: Add },
     { path: '/customer/:id', component: CustomersDetails },
-    { path: '/edit/:id', component: Edit },
-    { path: '/cart', component: Cart }
+    { path: '/edit/:id', component: Edit }
   ]
 })
 
@@ -48,7 +46,6 @@ new Vue({
             <ul class="nav navbar-nav">
               <li><router-link to="/">首页</router-link></li>
               <li><router-link to="/about">关于我</router-link></li>
-              <li><router-link to="/cart">购物车</router-link></li>
             </ul>
 
             <ul class="nav navbar-nav navbar-right">

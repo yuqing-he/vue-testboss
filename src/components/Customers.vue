@@ -2,21 +2,25 @@
   <div class="customers container">
     <Alert v-if="alert" v-bind:message="alert"></Alert>
     <h1 class="page-header">用户管理系统</h1>
-    <input type="text" class="form-control" placeholder="搜索" v-model="filterInput">
+    <input type="text" class="form-control search" placeholder="搜索" v-model="filterInput">
     <table class="table table-striped">
       <thead>
         <tr>
           <th>姓名</th>
+          <th>学校</th>
+          <th>学历</th>
           <th>电话</th>
-          <th>邮箱</th>
+          <!-- <th>邮箱</th> -->
           <th>操作</th>
         </tr>
       </thead>
       <tbody>
         <tr v-for="customer in filterBy(customers,filterInput)" :key="customer.id">
           <td>{{customer.name}}</td>
+          <td>{{customer.graduationschool}}</td>
+          <td>{{customer.profession}}</td>
           <td>{{customer.phone}}</td>
-          <td>{{customer.email}}</td>
+          <!-- <td>{{customer.email}}</td> -->
           <td><router-link class="btn btn-default" v-bind:to="'/customer/' + customer.id">详情</router-link></td>
         </tr>
       </tbody>
@@ -65,8 +69,12 @@ export default {
 </script>
 
 <style scoped>
+h1 {
+  font-size: 30px;
+}
 .search {
-  padding: 10px 0;
+  background: #F1F3F4;
+  margin-bottom: 10px;
 }
 .bar6 input {
   border: 2px solid #222;

@@ -5,26 +5,19 @@
 ## Build Setup
 
 ``` bash
-# install dependencies
+
+# install dependencies (安装依赖)
 npm install
 
-# serve with hot reload at localhost:8080
+# serve with hot reload at localhost:8080 (运行项目)
 npm run dev
 
-# build for production with minification
+# build for production with minification (编译项目)
 npm run build
 
-# build for production and view the bundle analyzer report
-npm run build --report
+# run start virtual data at localhost:3000 (启动虚拟数据)
+npm run json:server (注：json:server是package.json文件的)
 
-# run unit tests
-npm run unit
-
-# run e2e tests
-npm run e2e
-
-# run all tests
-npm test
 ```
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+- [Lab: Welcome you to my homepage!](https://github.com/yuqing-he)
